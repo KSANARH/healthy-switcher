@@ -1,0 +1,328 @@
+html, body{
+    padding: 0;
+    margin:0;
+    font-size: px;
+}
+.ob{
+    width: 70%;
+    margin:auto;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+h1{
+    font-size: 3.8vw;
+    font-family:'Comfortaa', cursive;
+    font-weight: 600;
+}
+h2{
+    font-family:'Roboto', sans-serif;
+    font-weight: 2000;
+    font-size: 3.1vw;
+}
+.main-text{
+    font-family:'Roboto', sans-serif;
+    font-size: clamp(13px,2.2vw,25px);
+    font-weight: 600;
+}
+.special-font-family{
+    font-family:'Comfortaa', cursive;
+    font-weight: 600;
+}
+.text-shadow{
+    text-shadow:0.5vw 1.2vw 10px #312e2e;
+}
+
+
+.header{
+    /*background-image:url(img/background.jpg);*/
+    background:rgb(155, 98, 153) ;
+    background-size: cover;
+    color: #102039;
+    position:relative;
+    z-index: 1;
+}
+
+.photo{
+    position: relative;
+    height: 42vw;
+    background-image: url(img/me2.jpg);
+    background-size: cover;
+    box-shadow: 0vw -11vw 5vw  -4vw #272424 inset;
+}
+
+.parblock1{
+    position:absolute;
+    bottom: -4%;
+    left: 3%;
+    right: 5%;
+    width: 90%;
+    height: auto;
+
+}
+.paragraph{
+    font-size: 2.2vw;
+    color: #c4c4c4;
+}
+.heading{
+    margin-top: 2.5vw;
+    margin-bottom: 2vw;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2vw;
+
+    display: flex;
+    justify-content: space-between;
+    /*расположение пунктов по ширине (с прижатием к краям)*/
+    align-items: center;/* пункты (по центру относительно) друг друга*/
+}
+.list li{
+    display: inline;
+    font-size: clamp(10px,2.1vw,25px)
+}
+.li1{
+    margin: 0.5vw;
+}
+.li2{
+    margin-left: 0.6vw;
+}
+
+#name{
+    margin-left: 0;
+    margin-right: 0.6vw;
+    letter-spacing: 0.1vw;
+    font-weight: 1000;
+    font-size: clamp(14px,3vw,30px);
+}
+
+
+.header a:link{
+    color: #102039;
+    text-decoration: none;
+}/*состояние непосещённой ссылки */
+.header a:visited{
+    color: #102039;
+    text-decoration: none;
+}/*уже посещённая*/
+.header a:hover{
+    color: aliceblue;
+    text-decoration:underline;
+    padding-bottom: 2px;
+}/*состояние ссылки при наведении мышкой*/
+.header a:active{
+    color: aliceblue;
+    text-decoration:underline;
+    padding-bottom: 2px;
+}/*при зажатии мышки*/
+/*редактировать состояния ссылок необходимо именно в такой последовательности*/
+
+
+#about-me{
+    margin-top: 0px;
+}
+/*.about-me-list{
+
+}*/
+.tick{
+    width: 7%;
+    margin-right: 1vw;
+}
+.item-and-tick{
+     display: flex;
+     align-items: center;
+}
+
+.uvlimg{
+    width: 30%;
+
+    border-radius: 50%;
+    border-color: rgba(255, 0, 246, 0.68);
+}
+.img123{
+    display: flex;
+    justify-content:space-between;
+}
+
+.cit{
+    background: rgb(155, 98, 153) ;
+    color: #102039;
+    font-size: clamp(13px,3vw,25px);
+}
+
+.quote{
+    font-style: italic;
+    padding-bottom: 1%;
+}
+.autor{
+    font-family:'icons';
+    text-align: end;
+    padding-top: 0;
+}
+
+form{
+    font-size: 2.3vw;
+    font-family:'Comfortaa', cursive;
+}
+input[type=text]{
+    border-style:ridge;
+    border-color: rgba(19, 10, 25, 0.85);
+    border-width: 0.3vw;
+    border-radius: 10px;
+    background:#d8ccde;
+    padding: 5px;
+    outline: none;
+    width: 81%;
+    height: 3vw;
+
+    font-size: 2.2vw;
+    font-family:inherit;
+}
+input[type=text]:focus{
+    background:#fff;
+}
+input[type=email]{
+    border-style:ridge;
+    border-color: rgba(19, 10, 25, 0.85);
+    border-width: 0.3vw;
+    border-radius: 10px;
+    background:#d8ccde;
+    padding: 5px;
+    outline: none;
+    width: 81%;
+    height: 3vw;
+
+    font-size: 2.2vw;
+    font-family:inherit;
+}
+input[type=email]:focus{
+    background:#ffffff;
+
+}
+textarea{
+    resize: none;
+    width: 80%;
+    height: 6em;
+    border-style:ridge;
+    border-color: rgba(19, 10, 25, 0.85);
+    border-width:0.3vw;
+    border-radius: 10px;
+    background:#d8ccde;
+    padding: 12px;
+    outline: none;
+
+    font-size: 2.2vw;
+    font-family:inherit;
+}
+textarea:focus{
+    background:#fff;
+    height: 12em;
+}
+input[type=submit]{
+    border-style:ridge;
+    border-color: rgba(19, 10, 25, 0.85);
+    border-width: 0.3vw;
+    border-radius: 10px;
+    background:#d8ccde;
+
+    font-size: 2.1vw;
+    font-family:inherit;
+}
+input[type=reset]{
+    border-style:ridge;
+    border-color: rgba(19, 10, 25, 0.85);
+    border-width: 0.3vw;
+    border-radius: 10px;
+    background:#d8ccde;
+
+    font-size: 2.1vw;
+    font-family:inherit;
+}
+
+#gotop{
+    background: rgba(155, 98, 153, 0.63);
+    width: 5vw;;
+    height: 5vw;
+    border-radius: 5px;
+    line-height: 5vw;
+    text-align: center;
+    font-size: 3.8vw;
+
+    position: fixed;
+    right: 5%;
+    bottom: 3vw;
+
+}
+#gotop a:link{
+    color: #102039;
+    text-decoration: none;
+    z-index: 2;
+}
+#gotop a:visited{
+    color: #102039;
+    text-decoration: none;
+}
+#gotop a:hover{
+    color: aliceblue;
+    text-decoration:underline;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+#gotop a:active{
+    color: aliceblue;
+    text-decoration:underline;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+footer{
+    background: rgba(19, 10, 25, 0.85) ;
+    color: #87958e;
+    font-size: max(2vw,12px);
+    height: 17.5vw;
+}
+.footertable{
+    width: 100%;
+    white-space: nowrap;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.footertable h3{
+    margin: 2% 0;
+}
+.footertable p{
+    margin: 3% 0;
+}
+.fl{
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    padding-right:6.3%;
+}
+
+.footertable a:link{
+    color: #ffffff;
+    text-decoration: none;
+}/*состояние непосещённой ссылки */
+.footertable  a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}/*уже посещённая*/
+.footertable  a:hover{
+    color:#ac5db2;
+    text-decoration:underline;
+    padding-bottom: 2px;
+}/*состояние ссылки при наведении мышкой*/
+.footertable  a:active{
+    color: #ac5db2;
+    text-decoration:underline;
+    padding-bottom: 2px;
+}
+
+.ikon{
+    width: 7vw;
+}
+
