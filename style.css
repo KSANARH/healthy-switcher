@@ -130,14 +130,17 @@ header span{
 }
 .block_text{
   max-width: 450px;
-  margin: 10px;
+  width: 96%;
+  margin: 2%;
   margin-top: 5px;
 }
 .containerz img{
-  margin: 5px;
+  margin: 1%;
+  width: 98%;
   border-radius: 7px;
+
   max-height: 325px;
-  max-width: 260px;
+  
   object-fit: cover;
 }
 .to_autor{
