@@ -94,7 +94,6 @@ header{
   background-color: #171718;
   
   color: #fff;
-  font-weight: 600;
   font-size: clamp(14px, 1.5vw, 20px);
 
   border-bottom-style:solid;
@@ -113,12 +112,13 @@ header li{
   justify-content:space-between;
 }
 header span{
-  font-size: clamp(18px, 2.5vw, 25px);
+  font-size: clamp(18px, 3vw, 30px);
   margin: 5px;
+  font-weight: 600;
 }
 /*MAIN*/
 main{
-  margin: 30px auto;
+  margin: auto;
 }
 section{
   margin: 40px auto;
@@ -201,3 +201,28 @@ section{
 }
 
 /*FOOTER*/
+footer{
+  background-color: #26292D;
+  padding: 30px 10%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .ikon{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer p{
+  font-weight: 600;
+  font-size: clamp(16px,3.3vw,34px);
+  text-indent: 0;
+}
+
+.vk_icon,
+.instagram_icon{
+  height: clamp(40px, 10vw, 90px);
+  margin-right: 2vw;
+  
+}
