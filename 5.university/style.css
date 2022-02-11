@@ -25,8 +25,8 @@ a:visited{
 a:active{
   text-decoration: none;
 }
-a:link{
-}
+/*a:link{
+}*/
 .container {
   position: relative;
   overflow: hidden;
@@ -36,7 +36,7 @@ a:link{
 
 .sidebar {
   height: 100%;
-  width: 35%;
+  width: 45%;
   position: absolute;
   top: 0;
   left: 0;
@@ -58,7 +58,12 @@ a:link{
 }
 
 .sidebar h1 {
-  font-size: 33px;
+  font-size: clamp(18px, 3vw,33px);
+  text-align:left;
+
+}
+.sidebar p {
+  font-size: clamp(10px, 2vw,20px);
   text-align:left;
 
 }
@@ -67,8 +72,8 @@ a:link{
   height: 100%;
   position: absolute;
   top: 0;
-  left: 35%;
-  width: 65%;
+  left: 45%;
+  width: 55%;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -99,7 +104,7 @@ button:focus {
 
 .container .controls button {
   position: absolute;
-  left: 35%;
+  left: 45%;
   top: 90%;
   z-index: 100;
 }
