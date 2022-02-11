@@ -52,7 +52,7 @@ header li a:link {
   text-decoration: none;
 }
 header li a:focus {
-  border: 2px solid #1aa4b6;
+  border-bottom: 2.5px solid #1aa4b6;
   border-radius: 2px;
 }
 header li a:hover {
@@ -88,7 +88,7 @@ header{
   background-color: #171718;
   
   color: #fff;
-  font-weight: 600;
+  
   font-size: clamp(14px, 1.5vw, 20px);
 
   border-bottom-style:solid;
@@ -106,7 +106,8 @@ header li{
   margin:5px 1.5vw ;
 }
 header span{
-  font-size: clamp(18px, 2.5vw, 25px);
+  font-weight: 600;
+  font-size: clamp(18px, 3vw, 30px);
   margin: 5px;
 }
 /*MAIN*/
