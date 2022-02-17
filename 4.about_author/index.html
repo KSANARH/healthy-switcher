@@ -1,48 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ChiefSlider/style.css">
+    <script defer src="ChiefSlider/app.js"></script>
 
     <meta description content="">
     <meta keywords content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Ксения</title>
-</head>
+</head> 
 <body> <!-- comm -->
+<header>
     <div class="header" id="novigation">
         <div class="ob">
             <ul class="list special-font-family">
                 <li id="name">
                     <span>АРХИПОВА <br>КСЕНИЯ</span>
                 </li>
-                <li class="li1"><a title="" h ref="#about-me">Обо мне</a></li>
+                <li class="li1"><a title="" href="#about-me">Обо мне</a></li>
                 <li class="li1"><a href="#goals">Цели</a></li>
                 <li class="li1"><a href="#hobbies">Увлечения</a></li>
                 <li class="li1"><a href="#lich">Личное</a></li>
                 <li  class="li2"><a href="#connection">Связь</a></li>
             </ul>
             <div class="photo">
+                <div class="zhopa">
+                    <div class="container1">
+                
+                    <div class="slider">
+                      <div class="slider__wrapper">
+                        <div class="slider__items">
+                          <div class="slider__item">
+                            <!-- Контент 1 слайда -->
+                            1
+                          </div>
+                          <div class="slider__item">
+                            <!-- Контент 2 слайда -->
+                            2
+                          </div>
+                          <div class="slider__item">
+                            <!-- Контент 3 слайда -->
+                            3
+                          </div>
+                          <div class="slider__item">
+                            <!-- Контент 4 слайда --> 
+                            4
+                          </div>
+                          <div class="slider__item">
+                            <!-- Контент 5 слайда -->
+                            5
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slider__control" data-slide="prev"></a>
+                      <a href="#" class="slider__control" data-slide="next"></a>
+                      <ol class="slider__indicators">
+                        <li data-slide-to="0"></li>
+                        <li data-slide-to="1"></li>
+                        <li data-slide-to="2"></li>
+                        <li data-slide-to="3"></li>
+                        <li data-slide-to="4"></li>
+                      </ol>
+                    </div>
+                
+                  </div>
+                </div>
                 <!--<img  class="imgme" src="img/me.jpg" alt="моё фото">-->
-                <div class="parblock1">
-                    <p class="paragraph main-text">
-                   Ученица старшей школы<br> </p>
-               </div>
             </div>
-            <h1 class="text-shadow heading">Будущий front-end разработчик</h1>
+            <h1 class="text-shadow">Будущий front-end разработчик</h1>
         </div>
     </div>
-
+</header>
+<main>
     <div class="ob">
-        <h2 id="about-me">Обо мне</h2>
+        <h2 class="about_me">Обо мне</h2>
         <div class="about-me-list">
             <div class="item-and-tick">
                 <img class="tick" src="img/tick.png">
                 <p class="main-text">
-                    Хуйня на ножках
+                    Пункт 1
                 </p>
             </div>
             <div class="item-and-tick">
@@ -82,7 +123,7 @@
     <div class="ob">
         <h2 id="lich">Личное</h2>
     </div>
-
+<!--
     <div class="ob">
         <h2 id="connection">Связь</h2>
             <form method="post" action="">
@@ -99,7 +140,8 @@
                 <input type="reset">
             </form>
     </div>
-
+-->
+</main>
     <div id="gotop">
         <a href="#novigation" class="special-font-family">Л</a>
     </div>
@@ -126,6 +168,7 @@
             </div>
         </div>
     </footer>
-    <script src=''></script>
+
+<script src="app.js"></script>
 </body>
 </html>

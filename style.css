@@ -2,9 +2,10 @@
 body,html{
   margin: 0;
   padding: 0;
-  font-family:'DM Sans', sans-serif;
+  font-family:'DMSans', sans-serif;
   color: #fff;
   word-wrap: break-word;
+  background-color: #171718;
 }
 *,
 *::before,
@@ -17,24 +18,49 @@ img{
   vertical-align:left;
 }
 
-body{
-  background-color: #171718;
-}
 
 /*FONTS*/
+@font-face {
+  font-family: 'DMSans';
+  src: url('Fonts/DM_Sans/DMSans-Regular.woff2') format('woff2'),
+      url('Fonts/DM_Sans/DMSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans_bold';
+  src: url('Fonts/DM_Sans/DMSans-Bold.woff2') format('woff2'),
+      url('Fonts/DM_Sans/DMSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans_italic';
+  src: url('Fonts/DM_Sans/DMSans-Italic.woff2') format('woff2'),
+      url('Fonts/DM_Sans/DMSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
 .blue_color{
   color: #1aa4b6;
 }
 h1{
   font-size:clamp(22px,4.9vw,50px);
-  font-weight: 600;
   text-align:center;
+  font-family:'DMSans_bold', sans-serif;
 }
 h3{
     font-size: clamp(15px,2.2vw,28px);
     margin: 0;
     text-align: left;
     margin-bottom: 3%;
+    font-family:'DMSans_bold', sans-serif;
 }
 h2{
   font-size: clamp(18px,3.2vw,34px);
