@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,italic,500,500italic,700,700italic);
+
 /*ZEROING*/
 body,html{
    margin: 0;
@@ -44,40 +46,26 @@ p{
   text-indent: clamp(12px,1.2vw,22px);
 }
 /*HEADER*/
-header li a{
+header a{
   color: #fff;
 }
-header li a:link {
+header a:link {
   color: #fff;
   text-decoration: none;
 }
-header li a:focus {
+header a:focus {
   border-bottom: 2.5px solid #1aa4b6;
   border-radius: 2px;
 }
-header li a:hover {
+header a:hover {
   border-bottom: 2.5px solid #1aa4b6;
   border-radius: 2px;
-}
-
-header span a{
-  color: #1aa4b6;
-}
-header span a:link {
-  color: #1aa4b6;
-  text-decoration: none;
-}
-header span a:focus {
-  color: #fff;
-}
-header span a:hover {
-  color: #fff;
 }
 
 header{
+  z-index: 50;
   width: 80%;
 
-  
   min-height: 40px;
   padding: 0 10%;
 
@@ -88,27 +76,27 @@ header{
   background-color: #171718;
   
   color: #fff;
-  
   font-size: clamp(14px, 1.5vw, 20px);
 
   border-bottom-style:solid;
   border-bottom-width: 0.5px;
   border-bottom-color: rgba(82, 79, 79, 0.486);
 }
-header ul{
+.menu_list{
   list-style: none;
 
   justify-content:space-between;
   display: flex;
   flex-wrap: wrap;
 }
-header li{
-  margin:5px 1.5vw ;
+.menu_list li{
+  margin:5px 0 5px 3vw ;
+  justify-content:space-between;
 }
 header span{
+  font-size: clamp(24px, 3vw, 30px);
+  margin: 0 2px 0 0;
   font-weight: 600;
-  font-size: clamp(18px, 3vw, 30px);
-  margin: 5px;
 }
 /*MAIN*/
 main{
@@ -125,4 +113,85 @@ section{
 
 .section1 h2{
   margin: 20px auto;
+}
+
+/*MEDIA FOR MENU*/
+@media (max-width: 450px){
+  .menu_burger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    z-index: 2;
+      }
+  .menu_burger span{
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    top: 8px;
+    left: 0;
+    margin: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .menu_burger:before,
+  .menu_burger:after{
+    content: '';
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .menu_burger:before{
+    top:0;
+  }
+  .menu_burger:after{
+    bottom: 0;
+  }
+
+  .menu{
+    overflow: auto;
+    z-index: 1;
+    position: fixed;
+
+    height: 100%;
+    width: 100%;
+    left: 100%;
+    top: 0;
+    background-color:#26292D;
+    margin: 40px 0 0 0;
+    
+    transition: all 1s ease 0s;
+  }
+  .menu_list{
+    display: block;
+    width: 80%;
+    margin: 10px auto 0 auto;
+
+    font-size: 23px;
+    line-height: 50px;
+
+  }
+  .menu li{
+    margin: 0;
+  }
+  .menu_burger.active:before{
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .menu_burger.active:after{
+    transform: rotate(-45deg);
+    bottom: 7px;
+  }
+  .menu_burger.active span{
+    transform:scale(0);
+  }
+  .menu.active{
+    left: 0;
+  }
+  body.lock{
+    overflow: hidden;
+  }
 }
