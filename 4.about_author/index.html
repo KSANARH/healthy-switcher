@@ -17,19 +17,25 @@
     <title>Ксения</title>
 </head> 
 <body> <!-- comm -->
+<div class="wrapper">
 <header>
     <div class="header" id="novigation">
         <div class="ob">
-            <ul class="list special-font-family">
-                <li id="name">
-                    <span>АРХИПОВА <br>КСЕНИЯ</span>
-                </li>
+            <div class="hat">
+            <span  id="name" class="list special-font-family">АРХИПОВА <br>КСЕНИЯ</span>
+            <div class="menu_burger">
+                <span></span>
+            </div>
+            <nav class="menu">
+            <ul class="list special-font-family menu_list">
                 <li class="li1"><a title="" href="#about-me">Обо мне</a></li>
                 <li class="li1"><a href="#goals">Цели</a></li>
                 <li class="li1"><a href="#hobbies">Увлечения</a></li>
                 <li class="li1"><a href="#lich">Личное</a></li>
                 <li  class="li2"><a href="#connection">Связь</a></li>
             </ul>
+        </nav>
+        </div>
             <div class="photo">
                 <div class="zhopa">
                     <div class="container1">
@@ -78,24 +84,24 @@
         </div>
     </div>
 </header>
-<main>
+<main> 
     <div class="ob">
         <h2 class="about_me">Обо мне</h2>
         <div class="about-me-list">
             <div class="item-and-tick">
-                <img class="tick" src="img/tick.png">
+                <img class="tick" src="img/">
                 <p class="main-text">
                     Пункт 1
                 </p>
             </div>
             <div class="item-and-tick">
-                <img class="tick" src="img/tick.png">
+                <img class="tick" src="img/">
                 <p class="item main-text">
                      Пункт 2
                 </p>
             </div>
             <div class="item-and-tick">
-                <img class="tick" src="img/tick.png">
+                <img class="tick" src="img/">
                 <p class="item main-text">
                      Пункт 3
                 </p>
@@ -144,33 +150,26 @@
     </div>
 -->
 </main>
-    <div id="gotop">
+    <!--<div id="gotop">
         <a href="#novigation" class="special-font-family">Л</a>
-    </div>
+    </div>-->
 
-    <footer class="special-font-family">
-        <div class="ob">
-           <div class="footertable">
-                    <div class="fl">
-                       <h3>Follow me:</h3>
-                       <p>
-                        <a href="https://vk.com/bulochka_nyam_k">
-                            <img class="ikon" src="img/vk.png" alt="иконка vk" >
-                        </a>
-                        <a href=""><img class="ikon" src="img/inst.png"  alt="иконка инсты"></a>
-                        </p>
-                    </div>
-                    <div class="fl">
-                        <h3>Контакты</h3>
-                        <p>Gmail: <a href="mailto:ksanarhshchi@gmail.com">ksanarhshchi@gmail.com</a><br>
-                            Tel: <a href="tel:+79992258535">+79992258535</a>
-                        </p>
-                    </div>
-
+    <footer>
+        <div class="social">
+            <div class="follow">Follow me:</div>
+            <div>
+                <a href=""><img class="vk_icon" src="../img/VK_black.svg"></a>
+                <a href=""><img class="instagram_icon" src="../img/Instagram_black.svg"></a>
             </div>
+        </div>
+        <div class="connect">
+                <div class="follow">Contact:</div>
+                <div class="mail"><a href="mailto">pochta@gmail.com</a></div>       
+                <div class="tel"><a href="tel:">+79999999999</a></div>
         </div>
     </footer>
 
 <script src="app.js"></script>
+</div>
 </body>
 </html>

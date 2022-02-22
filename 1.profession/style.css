@@ -1,10 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,italic,500,500italic,700,700italic);
 
 /*ZEROING*/
 body,html{
    margin: 0;
    padding: 0;
-   font-family:'DM Sans', sans-serif;
+   font-family:sans-serif;
    color: #fff;
    word-wrap: break-word;
  }
@@ -25,6 +24,8 @@ body,html{
 
  /*FONTS*/
 
+
+
 .blue_color{
   color: #1aa4b6;
 }
@@ -39,11 +40,13 @@ h2{
   font-size: clamp(20px,3.2vw,34px);
   margin: 0;
   text-align: center;
+  margin: 0 0 20px 0;
 }
 p{
-  margin: 20px auto;
+  margin: 0 auto 20px auto;
   font-size:clamp(16px,1.6vw,26px);
   text-indent: clamp(12px,1.2vw,22px);
+  text-align: justify;
 }
 /*HEADER*/
 header a{
@@ -66,8 +69,9 @@ header{
   z-index: 50;
   width: 80%;
 
-  min-height: 40px;
+  min-height: 50px;
   padding: 0 10%;
+  margin: 0 0 2vw 0;
 
   display:inline-flex;
   justify-content: space-between;
@@ -98,12 +102,26 @@ header span{
   margin: 0 2px 0 0;
   font-weight: 600;
 }
-/*MAIN*/
-main{
- /* background: ;
-  border-radius: 7px;*/
-  margin: 30px auto;
+header span a{
+  color: #1aa4b6;
 }
+header span a:link {
+  color: #1aa4b6;
+  text-decoration: none;
+}
+header span a:focus {
+  color: #fff;
+  border: 0;
+}
+header span a:hover {
+  color: #fff;
+  border: 0;
+}
+/*MAIN*/
+/*main{
+  background: ;
+  border-radius: 7px;
+}*/
 
 section{
   width: 80%;
@@ -111,9 +129,7 @@ section{
 }
 /*SECTION 1*/
 
-.section1 h2{
-  margin: 20px auto;
-}
+
 
 /*MEDIA FOR MENU*/
 @media (max-width: 450px){
@@ -161,7 +177,7 @@ section{
     left: 100%;
     top: 0;
     background-color:#26292D;
-    margin: 40px 0 0 0;
+    margin: 50px 0 0 0;
     
     transition: all 1s ease 0s;
   }

@@ -8,8 +8,9 @@ menu_burger.onclick = function(){
     menu.classList.toggle('active');
     back.classList.toggle('lock');
 }
-
+/*
 menu_list.onclick = function () {
     menu_list.classList.remove('active');
     back.classList.toggle('lock');
 }
+*/
