@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;800&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: #000;
+   text-decoration: none;
+}
+
+body{
+   font-family: 'M PLUS 1p', sans-serif;
+   font-size: 14px;
+   font-weight: 800;
+   color: #000;
+   background: #fff;
+
+}
+.wrapper{
+   min-height: 100%;
+   overflow: hidden;
+}
+/*HEADER*/
+header{
+   margin-bottom:64px ;
+   width: 100%;
+   height: 90px;
+   align-content: center;
+
+   box-shadow: 2px 4px 6px rgba(194, 192, 192, 0.25);
+   transition: 0.6s ease-in;
+}
+.lang{
+   display: flex;
+  
+   align-items: center;
+   justify-content: flex-end;
+
+   margin: auto;
+   width: 80%;
+
+   transition: 0.6s ease-in;
+}
+.lang a{
+   display: block;
+   margin-left: 8px;
+   text-decoration: none;
+
+   transition-duration: 0.6s;
+   transition-timing-function: ease-out;
+}
+.en{
+   color:#C4C4C4;
+   border-bottom: 2.5px solid rgba(0, 0, 0, 0);
+}
+.en:hover{
+   color: #000;
+   border-bottom: 2.5px solid #000;
+}
+.ru{
+   color: #000;
+   border-bottom: 2.5px solid #000;
+}
+
+.header-main{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   margin: auto;
+   width: 80%;
+   
+   transition: 0.6s ease-in;
+}
+.logo-search{
+   display: flex;
+   align-items: center;
+
+   transition: 0.6s ease-in;
+}
+
+.logo{
+   margin-right: 70px ;
+}
+#search{
+   width: 290px;
+   height: 44px;
+   background: #ECECEC;
+   border: none;
+   
+   padding: 23px;
+
+   color: #111010;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 12px;
+   line-height: 21px;
+}
+.header-main a{
+   color: #000;
+   text-decoration: none;
+}
+.btn-entr-registr{
+   display: flex;
+   align-items: center;
+}
+.registration{
+   display: flex;
+   width: 140px;
+   height: 40px;
+   margin-left: 12px;
+
+   justify-content: center;
+   align-items: center;
+
+   color: #fff;
+   background-color: #000;
+
+   transition-duration: 0.5s;
+   transition-timing-function: ease-out;
+}
+.registration:hover{
+   color: #000;
+   border: 2px solid #000000;
+   background-color: #fff;
+}
+.entrance{
+   display: flex;
+   width: 86px;
+   height: 40px;
+   margin-left: 70px;
+
+   border: 2px solid #000000;
+
+   justify-content: center;
+   align-items: center;
+
+   transition-duration: 0.5s;
+   transition-timing-function: ease-out;
+}
+.entrance:hover{
+   color: #fff;
+   background-color: #000;
+}
+.button-loading{
+   margin-left: 15px;
+
+   transition: color 0.5s ease-out;
+}
+.button-loading:hover{
+   color:#C4C4C4;
+}
+
+.menu-burger-all{
+   display: none;
+}
+/*MAIN*/
+main{
+   width: 80%;
+   margin: auto;
+}
+main section{
+   margin-bottom: 35px;
+}
+
+.name-section{
+   display: flex;
+   align-items: center;
+
+   margin: 0 0 10px 25px;
+}
+.dash{
+   display: inline-block;
+   width: 32px;
+   height: 2px;
+   margin-right: 25px;
+
+   background: #000;
+}
+h2{
+   display: inline;
+   font-size: 24px;
+}
+
+.songsblock{
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.song{
+   display:block;
+   width: 31%;
+   margin: 0 10px 0 0; 
+}
+.song:hover{
+   filter: drop-shadow(8px 8px 16px rgb(99, 99, 99));
+}
+
+.songsblock .song:nth-last-child(-n+2){
+   margin-right: 0;
+}
+
+
+main img{
+   width: 100%;
+   filter: drop-shadow(4px 8px 16px rgba(99, 99, 99, 0.6));
+}
+.name-autor{
+   margin-top: 0px;
+}
+.name-song{
+   font-size: 16px;
+}
+.autor{
+   font-weight: 300;
+}
+/*BTN*/
+.button-play{
+   position: absolute;
+   bottom: 30%;
+   right: -3%;
+   width: 7%;
+   margin: 0;
+}
+.button-playlist-1{
+   position: relative;
+
+   background-color: rgb(0, 0, 0);
+   width: 75px;
+   height:60px;
+   /*padding-top: 70.2857%;*/
+
+   transition: 0.3s ease;
+}
+
+.triangle {
+   position: absolute;
+   margin: 0 auto;
+   left: 25px;
+   top:15px;
+   width: 0;
+   height: 0;
+   border-top: 15px solid transparent;
+   border-left: 30px solid #fff000;
+   border-bottom: 15px solid transparent;
+
+   transition: 1s ease;
+}
+.button-playlist-1:hover{
+   background: rgb(43, 41, 41);
+}
+.button-playlist-1:hover .triangle{
+   border-left: 30px solid #000000;
+}
+.button-playlist-1::after{
+   content: 'Слушать ещё';
+   display: inline-block;
+   line-height: 12px;
+   font-size: 11px;
+   position: relative;
+   right:  -105%;
+   bottom: -10%;
+   opacity: 0;
+   text-decoration: none;
+   transition: 1s ease;
+}
+.button-playlist-1:hover::after{
+   opacity: 1;
+}
+/*FOOTER*/
+footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 160px;
+   background: #111111;
+   color: #fff;
+   font-weight: 300;
+}

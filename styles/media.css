@@ -1,0 +1,231 @@
+@media (max-width: 1180px){
+   .lang, .header-main{
+      width: 95%;
+      
+   }
+}
+
+@media (max-width: 1000px){
+/*HEADER*/
+   .lang{
+      z-index: 3;
+      display: flex;
+      position:fixed;
+      margin: 0;
+      font-size: 16px;
+
+      bottom: 20px;
+      left: 100%;
+      
+      transition: 0.7s ease-in;
+   }
+   .btn-entr-registr{
+      width: 100%;
+      height: 100%;
+      background-color:#ffffff;
+      z-index: 2;
+
+      display:block;
+      position:fixed;
+
+      overflow-y: auto;
+
+      top: 90px;
+      left: 100%;
+
+      transition: 0.7s ease-in;
+      text-align: center;
+   }
+   .btn-entr-registr .registration,
+   .btn-entr-registr .button-loading,
+   .btn-entr-registr .entrance{
+      margin: 0 auto 10px auto;
+
+      font-size: 20px;
+   
+      transition-duration: 0.5s;
+      transition-timing-function: ease-out;
+
+      overflow: auto;
+   }
+   .btn-entr-registr .registration{
+      width: 210px;
+      height: 60px;
+   }
+
+   .btn-entr-registr .entrance{
+      margin-top:30% ;
+      width: 129px;
+      height: 50px;
+   }
+
+   header{
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      height: 80px;
+      margin-bottom: 30px;
+   }
+   .header-main{
+      display: flex;
+      align-items: center;
+
+      justify-content: space-between;
+   }
+   .logo-search{
+      width: 86%;
+      justify-content: space-between;
+   }
+   .logo{
+      width: 30%;
+      max-width: 106px;
+      margin-right: 10px;
+   }
+   #search{
+      width: 70%;
+      max-width: 300px;
+   }
+  
+ /*MENU-BURGER*/
+  .menu-burger-all{
+     cursor: pointer;
+      display: block;
+      position: relative;
+      width: 12%;
+      max-width: 45px;
+      height: 40px;
+      margin-left: 4%;
+  }
+   .menu-burger{
+      display: block;
+      position: absolute;
+      width: 100%;
+      top:50%;
+   }
+   .menu-burger span{
+      position: absolute;
+      width: 100%;
+      height: 3.2px;
+      background: #fff000;
+      
+      transition: all 0.5s ease-in-out 0s;
+   }
+   .menu-burger::before,
+   .menu-burger::after{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 3.2px;
+      background: #000;
+      transition: all 0.5s ease-in-out 0s;
+      
+   }
+   .menu-burger::before{
+      top: -13px;
+   }
+   .menu-burger::after{
+      top: 13px;
+   }
+
+ /*ACTIVE*/
+   .menu-burger.active::before{
+      transform: rotate(45deg);
+      top: 0px;
+    }
+    .menu-burger.active::after{
+      transform: rotate(-45deg);
+      top:0px;
+    }
+    .menu-burger.active span{
+      transform: scale(0);
+    }
+   .lang.active{
+      left: 0px;
+   }
+   /*btn-entr-registr*/
+   .btn-entr-registr.active{
+
+      left: 0px;
+
+   }
+   
+   
+   /**/
+   body.lock{
+      overflow: hidden;
+   }
+/*MAIN*/
+   /*main{
+
+   }*/
+   main section{
+      margin-bottom: 30px;
+   }
+
+  /*.songsblock{
+
+   }*/
+   .song{
+      width: 45%;
+      margin: 0 10px 20px 0; 
+   }
+   .songsblock .song:nth-child(2n){
+      margin-right: 0;
+   }
+
+   .button-play{
+      position:static;
+      bottom: 0;
+      right: 0;
+      width: 45%;
+      margin: 0;
+   }
+   .button-playlist-1{
+      position: relative;
+      
+      background-color: rgb(0, 0, 0);
+      width: 100%;
+   
+      padding-top: 70.2857%;
+      filter: drop-shadow(4px 8px 16px rgba(99, 99, 99, 0.6));
+   }
+
+   .triangle {
+      position: absolute;
+      margin: 0 auto;
+      left: calc(50% - 30px);
+      top:calc(50% - 30px);
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-left: 60px solid #fff000;
+      border-bottom: 30px solid transparent;
+   }
+   .button-playlist-1:hover .triangle{
+      border-left: 60px solid #000000;
+   }
+   .button-playlist-1::after{
+      content: 'Слушать ещё';
+      margin-top: 10px;
+      font-size: 16px;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+   }
+   .button-playlist-1:hover::after{
+      opacity: 1;
+   }
+
+  /* main img{
+
+   }
+   .name-autor{
+      margin-top: 10px;
+   }
+   .name-song{
+      font-size: 16px;
+   }
+   .autor{
+      font-weight: 300;
+   }*/
+}
