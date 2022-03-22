@@ -1,76 +1,62 @@
 @media (max-width: 1180px){
    .lang, .header-main{
       width: 95%;
-      
    }
 }
 
 @media (max-width: 1000px){
-/*HEADER*/
+
+ /*HEADER*/
    .lang{
       z-index: 3;
-      display: flex;
-      position:fixed;
       margin: 0;
       font-size: 16px;
 
+      width: auto ;
+      position:fixed;
       bottom: 20px;
-      left: 100%;
+      right:  -100%;
       
-      transition: 0.7s ease-in;
    }
    .btn-entr-registr{
       width: 100%;
-      height: 100%;
+      height: calc(100% - 85px);
       background-color:#ffffff;
       z-index: 2;
 
-      display:block;
+      display:flex;
+      flex-direction: column;
+      
       position:fixed;
 
       overflow-y: auto;
 
-      top: 90px;
+      top: 85px;
       left: 100%;
+      
+      text-align: center;
 
       transition: 0.7s ease-in;
-      text-align: center;
    }
-   .btn-entr-registr .registration,
-   .btn-entr-registr .button-loading,
-   .btn-entr-registr .entrance{
+   .btn-entr-registr a > div{
+      display:inline-block;
+
+      min-height: 0;
+      padding: 9px 24px;
       margin: 0 auto 10px auto;
 
       font-size: 20px;
-   
-      transition-duration: 0.5s;
-      transition-timing-function: ease-out;
-
-      overflow: auto;
-   }
-   .btn-entr-registr .registration{
-      width: 210px;
-      height: 60px;
    }
 
    .btn-entr-registr .entrance{
-      margin-top:30% ;
-      width: 129px;
-      height: 50px;
+      margin-top: 100%;
    }
 
    header{
-      z-index: 4;
       display: flex;
       align-items: center;
       height: 80px;
       margin-bottom: 30px;
-   }
-   .header-main{
-      display: flex;
-      align-items: center;
-
-      justify-content: space-between;
    }
    .logo-search{
       width: 86%;
@@ -140,31 +126,31 @@
       transform: scale(0);
     }
    .lang.active{
-      left: 0px;
+      right: 5%;
    }
    /*btn-entr-registr*/
    .btn-entr-registr.active{
-
       left: 0px;
-
    }
-   
-   
    /**/
    body.lock{
       overflow: hidden;
    }
-/*MAIN*/
-   /*main{
 
-   }*/
+   .lang a,
+   .btn-entr-registr a > div,
+   .button-playlist-1, 
+   .button-playlist-1::after,
+   .triangle{
+      transition: none;
+   }
+}
+
+@media (max-width: 800px){
+/*MAIN*/
    main section{
       margin-bottom: 30px;
    }
-
-  /*.songsblock{
-
-   }*/
    .song{
       width: 45%;
       margin: 0 10px 20px 0; 
@@ -172,7 +158,6 @@
    .songsblock .song:nth-child(2n){
       margin-right: 0;
    }
-
    .button-play{
       position:static;
       bottom: 0;
@@ -195,8 +180,7 @@
       margin: 0 auto;
       left: calc(50% - 30px);
       top:calc(50% - 30px);
-      width: 0;
-      height: 0;
+
       border-top: 30px solid transparent;
       border-left: 60px solid #fff000;
       border-bottom: 30px solid transparent;
@@ -205,6 +189,7 @@
       border-left: 60px solid #000000;
    }
    .button-playlist-1::after{
+      display: block;
       content: 'Слушать ещё';
       margin-top: 10px;
       font-size: 16px;
@@ -213,19 +198,23 @@
       opacity: 0;
    }
    .button-playlist-1:hover::after{
+      display: block;
       opacity: 1;
    }
+}
 
-  /* main img{
-
+@media (max-width: 550px){
+   main{
+      width:70%;
    }
-   .name-autor{
-      margin-top: 10px;
+   .songsblock{
+      flex-direction: column;
+      margin: auto;
    }
-   .name-song{
-      font-size: 16px;
+   .song{
+     width: 100%;
    }
-   .autor{
-      font-weight: 300;
-   }*/
+   .button-play{
+      width: 100%;
+   }
 }

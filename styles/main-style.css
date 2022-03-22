@@ -4,7 +4,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   color: #000;
+
    text-decoration: none;
 }
 
@@ -12,31 +12,31 @@ body{
    font-family: 'M PLUS 1p', sans-serif;
    font-size: 14px;
    font-weight: 800;
-   color: #000;
+   
    background: #fff;
-
 }
 .wrapper{
    min-height: 100%;
    overflow: hidden;
 }
 /*HEADER*/
+header *{
+   color: #000;
+}
 header{
-   margin-bottom:64px ;
    width: 100%;
    height: 90px;
-   align-content: center;
+   margin-bottom:64px;
 
    box-shadow: 2px 4px 6px rgba(194, 192, 192, 0.25);
    transition: 0.6s ease-in;
 }
 .lang{
    display: flex;
-  
    align-items: center;
    justify-content: flex-end;
 
-   margin: auto;
+   margin: 0 auto 5px auto;
    width: 80%;
 
    transition: 0.6s ease-in;
@@ -44,21 +44,18 @@ header{
 .lang a{
    display: block;
    margin-left: 8px;
-   text-decoration: none;
-
-   transition-duration: 0.6s;
-   transition-timing-function: ease-out;
+   
+   transition: 0.6s ease-in;
 }
 .en{
    color:#C4C4C4;
    border-bottom: 2.5px solid rgba(0, 0, 0, 0);
 }
 .en:hover{
-   color: #000;
    border-bottom: 2.5px solid #000;
+   color: #000;
 }
 .ru{
-   color: #000;
    border-bottom: 2.5px solid #000;
 }
 
@@ -96,47 +93,37 @@ header{
    font-size: 12px;
    line-height: 21px;
 }
-.header-main a{
-   color: #000;
-   text-decoration: none;
-}
+
 .btn-entr-registr{
    display: flex;
    align-items: center;
 }
+.btn-entr-registr *{
+   transition: 0.5s ease-out;
+}
 .registration{
-   display: flex;
-   width: 140px;
-   height: 40px;
-   margin-left: 12px;
+   display: block;
 
-   justify-content: center;
-   align-items: center;
+   padding: 9px 15px;
+   margin-left: 12px;
 
    color: #fff;
    background-color: #000;
+   border: 2px solid #000000;
 
-   transition-duration: 0.5s;
-   transition-timing-function: ease-out;
 }
 .registration:hover{
    color: #000;
-   border: 2px solid #000000;
    background-color: #fff;
 }
 .entrance{
-   display: flex;
-   width: 86px;
-   height: 40px;
+   display: block;
+
+   padding: 9px 15px;
    margin-left: 70px;
 
    border: 2px solid #000000;
 
-   justify-content: center;
-   align-items: center;
-
-   transition-duration: 0.5s;
-   transition-timing-function: ease-out;
 }
 .entrance:hover{
    color: #fff;
@@ -144,8 +131,6 @@ header{
 }
 .button-loading{
    margin-left: 15px;
-
-   transition: color 0.5s ease-out;
 }
 .button-loading:hover{
    color:#C4C4C4;
@@ -155,6 +140,9 @@ header{
    display: none;
 }
 /*MAIN*/
+main *{
+   color: #000;
+}
 main{
    width: 80%;
    margin: auto;
@@ -178,36 +166,32 @@ main section{
    background: #000;
 }
 h2{
-   display: inline;
    font-size: 24px;
 }
 
 .songsblock{
    position: relative;
+
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
 }
 .song{
-   display:block;
    width: 31%;
    margin: 0 10px 0 0; 
 }
+
+
 .song:hover{
-   filter: drop-shadow(8px 8px 16px rgb(99, 99, 99));
+   box-shadow: 3px 6px 10px rgba(20, 20, 20, 0.603);
 }
 
 .songsblock .song:nth-last-child(-n+2){
    margin-right: 0;
 }
-
-
 main img{
    width: 100%;
    filter: drop-shadow(4px 8px 16px rgba(99, 99, 99, 0.6));
-}
-.name-autor{
-   margin-top: 0px;
 }
 .name-song{
    font-size: 16px;
@@ -220,16 +204,15 @@ main img{
    position: absolute;
    bottom: 30%;
    right: -3%;
+
    width: 7%;
-   margin: 0;
 }
 .button-playlist-1{
+   
    position: relative;
-
-   background-color: rgb(0, 0, 0);
+   background-color: #000;
    width: 75px;
    height:60px;
-   /*padding-top: 70.2857%;*/
 
    transition: 0.3s ease;
 }
@@ -248,12 +231,16 @@ main img{
    transition: 1s ease;
 }
 .button-playlist-1:hover{
+   box-shadow: 3px 6px 10px rgba(20, 20, 20, 0.603);
    background: rgb(43, 41, 41);
 }
 .button-playlist-1:hover .triangle{
-   border-left: 30px solid #000000;
+   border-left-color:#000000;
 }
+
+
 .button-playlist-1::after{
+   display: none;
    content: 'Слушать ещё';
    display: inline-block;
    line-height: 12px;
@@ -266,15 +253,23 @@ main img{
    transition: 1s ease;
 }
 .button-playlist-1:hover::after{
+   display: none;
    opacity: 1;
 }
+
 /*FOOTER*/
 footer{
    display: flex;
    justify-content: center;
    align-items: center;
+   
    height: 160px;
    background: #111111;
+   
+}
+footer *{
    color: #fff;
    font-weight: 300;
 }
+
+
